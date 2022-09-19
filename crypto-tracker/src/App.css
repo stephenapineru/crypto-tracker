@@ -5,7 +5,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: #1a1a1c;
+  background-color: #14681D;
   color: #fff;
 }
 
@@ -33,14 +33,7 @@
   height: 2.5rem;
   border-radius: 4px;
   border: none;
-  background-image: linear-gradient(
-    -225deg,
-    #ac32e4 0%,
-    #7918f2 48%,
-    #4801ff 100%
-  );
-
-  color: #e2e2e2;
+  background-image: linear-gradient(to right, #CB4B00 0%, #D87D02  51%, #CB4B00  100%);
 }
 
 .coin-input::placeholder {
@@ -48,7 +41,7 @@
 }
 
 .coin-search form{
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .coin-container { 

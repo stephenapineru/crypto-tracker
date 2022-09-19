@@ -23,6 +23,12 @@ function App() {
     setSearch(e.target.value);
   };
 
+  const handleSearch = e => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+    }
+  }
+
   const filteredCoins = coins.filter(coin =>
     coin.name.toLowerCase().includes(search.toLowerCase())
   );
@@ -31,11 +37,11 @@ function App() {
     <div className='coin-app'>
       <div className='coin-search'>
         <h1 className='coin-text'>Crypto Tracker</h1>
-        <form>
+        <form onKeyPress={handleSearch}>
           <input
             className='coin-input'
             type='text'
-            onChange={handleChange}
+            onChange={handleChange}    
             placeholder='Search'
           />
         </form>
